@@ -1,62 +1,50 @@
-{% extends 'index.html' %}
-{% load static %}
-{% block content %}
+{%extends 'index.html'%}
+{%load static%}
+{%block content%}
 
 
-<body>
-
-    <div class="content-wrapper">
-        <div><label id="myprofile" style="margin-top: 2%; margin-left: 7%; opacity: 0.6;">Reported issues</label></div>
-        <br>
-        <br>
-          <div class="row">
-            <div class="col-md-6 grid-margin stretch-card ">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-9">
-                      <div class="d-flex align-items-center align-self-start">
-                        <h3 class="mb-0">Reported issue</h3>
-                        
-                      </div>
-                    </div>
-                    <div class="col-3">
-                      <div class="icon icon-box-success">
-                        <span class="mdi mdi-arrow-top-right icon-item"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <h6 class="text-muted font-weight-normal">Revenue current</h6>
-                </div>
+<div class="row pt-5" style="background-color: black;">
+    <div class=" ml-5 text-light" style="font-size: 20px;font-weight: 600;margin-left:40px;">PROJECTS</div></div>
+<div class="content-wrapper">
+    <div class="row">
+      <div class="col-lg-4 mt-2">
+          <a href="tlprojecttasks" style="text-decoration: none;">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">reported issue</h4>
+              <div>
+                <img class="img-xs w-75 h-50" src="{% static '/img/www.png' %}" alt="" style="margin-left:40px;"> 
               </div>
+              
             </div>
-            <div class="col-md-6 grid-margin stretch-card ">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-9">
-                      <div class="d-flex align-items-center align-self-start">
-                        <h3 class="mb-0">Report issue</h3>
-                        
-                      </div>
-                    </div>
-                    <div class="col-3">
-                      <div class="icon icon-box-success">
-                        <span class="mdi mdi-arrow-top-right icon-item"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <h6 class="text-muted font-weight-normal">Revenue current</h6>
-                </div>
+          </div>
+        </a>
+        </div>
+      <div class="col-lg-4 mt-2 ">
+        <a href="tlprojecttasks" style="text-decoration: none;">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">report issue</h4>
+            <div>
+                <img class="img-xs w-75 h-50" src="{% static '/img/qqq.png' %}" alt="" style="margin-left:40px;"> 
               </div>
-            </div>
-            </div>
-            </div>
-            
+          </div>
+        </div>
+        </a>
+      </div>
+      
+      
 
-
-            
-
-</body>
-
+      <!-- <div class="col-lg-4  mt-2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Mobile App</h4>
+            <div class="">
+                <img class="img-xs w-75 h-50 ml-5" src="{% static '/mobileapp.jpg' %}" alt="" style="margin-left:40px;"> 
+              </div>
+          </div>
+        </div>
+      </div> -->
+    </div> 
+    </div>
 {% endblock %}

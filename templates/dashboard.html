@@ -1,87 +1,64 @@
-{% extends 'index.html' %}
-{% load static %}
-{% block content %}
-<style>
-#firstbox{
-  
-  height: 190px;
-  float: left;
-  width: 100%;
-  /* margin-left: 7%; */
-  margin-top: 5%;
-}
-#firstbox div{
-  padding-left: 2%;
-  float: left;
-}
-#adname{
-  padding-top: 14px;
-  color: #ffffff;
-  font-weight: 600;
-  max-width: 300px;
-}
-.date{
-    margin-left:10px;
-  }
-  @media(max-width:61.938em){
-   .date{
-        display: block;
-        margin-left: -12px;
-     }
-    }
-   </style>
-      </head>
-<body>
-<div><label id="myprofile" style="margin-top: 3%; margin-left: 7%; opacity: 0.6;">DASHBOARD</label></div>
-<div id="firstbox" class="shadow p-3 mb-5 rounded">
-    
-    
-  <div class="row">
-    <h3 id="adname">Shajeer vu</h3>
-    <h4 style="color: white;">python</h4>
-    <h5 style="font-weight: 400">
-    <span style="color: #12c598">Joining date</span><span class="date"> &nbsp&nbsp jan. 10, 2022</h5></span>   
-    <h5 style="font-weight: 400">
-    <span style="color: #12c598">employee id</span><span class="date"> &nbsp&nbsp JB 007</h5></span>   
- 
-  </div>
-</div>
+{%extends 'index.html'%}
+{%load static%}
+{%block content%}
 
+
+<div class="main-panel" style="background-color:black;">
     <div class="row">
-        <div class="col-lg-6 grid-margin stretch-card">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Pie chart</h4>
-              <canvas id="pieChart" style="height:250px"></canvas>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 grid-margin stretch-card">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Bar chart</h4>
-                <canvas id="barChart" style="height:230px"></canvas>
+        <div class=" ml-5 text-light" style="font-size: 20px;font-weight: 600;margin-left:40px;opacity: 0.6;">Dashboard</div></div>
+        <div class="container-fluid">
+        <div class="row mt-5 " style="background-color: #191c24;">
+             <div class="col-md-6">
+                    <h3 class="adname pt-4" style="margin-left:30px;">Shajeervu</h3>
+                    <h4 style="font-weight: 400;margin-left:30px;">python</h4>
+                    <h5 style="font-weight: 400;margin-left:30px;">
+                    <span style="color: #58B7AA">Joining date</span>&nbsp10 jan 2021</h5>
+                    <h5 style="font-weight: 400;margin-left:30px;">
+                      <span style="color: #58B7AA">employee id</span>&nbsp10 JB007</h5>
+                </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3">
+                   <div style="margin-left: 30px;"><img src="{% static '/assets/images/faces/face5.jpg' %}" class="p-3 rounded-circle justify-content-end ml-5" width="150" height="150" id=""></div> </div>
+                </div></div>
+                <div class="content-wrapper">
+                  <div class="page-header">
+                      <h3 class="page-title"> Chart </h3>
+                      
+                  </div>
+                  <div class="row">
+                  <div class="col-lg-6 grid-margin stretch-card">
+                      <div class="card">
+                      <div class="card-body">
+                          <h4 class="card-title">Bar chart</h4>
+                          <canvas id="barChart" style="height:230px"></canvas>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-6 grid-margin stretch-card">
+                      <div class="card">
+                      <div class="card-body">
+                          <h4 class="card-title">Pie chart</h4>
+                          <canvas id="pieChart" style="height:250px"></canvas>
+                      </div>
+                      </div>
+                  </div>
+                  </div>
               </div>
-            </div>
-          </div>
-        </div>
-                <!-- container-scroller -->
-    <!-- plugins:js -->
-    <script src="{% static 'assets/vendors/js/vendor.bundle.base.js' %}"></script>
-    <!-- endinject -->
-    <!-- Plugin js for this page -->
-    <script src="{% static 'assets/vendors/chart.js/Chart.min.js' %}"></script>
-    <!-- End plugin js for this page -->
-    <!-- inject:js -->
-    <script src="{% static 'assets/js/off-canvas.js' %}"></script>
-    <script src="{% static 'assets/js/hoverable-collapse.js' %}"></script>
-    <script src="{% static 'assets/js/misc.js' %}"></script>
-    <script src="{% static 'assets/js/settings.js' %}"></script>
-    <script src="{% static 'assets/js/todolist.js' %}"></script>
-    <!-- endinject -->
-    <!-- Custom js for this page -->
-    <script src="{% static 'assets/js/chart.js' %}"></script>
-</body>
-
-
-{% endblock %}
+              
+              <!--End Chart Html-->
+      
+              
+              <!-- main-panel ends -->
+              </div>
+              
+              
+              
+              
+              
+              
+              <!-- container-scroller -->
+              <!-- plugins:js -->
+              
+              
+              
+              {%endblock%}
