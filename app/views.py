@@ -8,3 +8,7 @@ def dashboard(request):
     return render(request,'dashboard.html')
 def Reportedissues(request):
     return render(request,'Reportedissues.html')
+def reportissue(request):
+    return render(request,'reportissue.html')
+def reportedissue(request):
+    return render(request,'reportedissue.html')
