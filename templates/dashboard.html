@@ -1,0 +1,87 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<style>
+#firstbox{
+  
+  height: 190px;
+  float: left;
+  width: 100%;
+  /* margin-left: 7%; */
+  margin-top: 5%;
+}
+#firstbox div{
+  padding-left: 2%;
+  float: left;
+}
+#adname{
+  padding-top: 14px;
+  color: #ffffff;
+  font-weight: 600;
+  max-width: 300px;
+}
+.date{
+    margin-left:10px;
+  }
+  @media(max-width:61.938em){
+   .date{
+        display: block;
+        margin-left: -12px;
+     }
+    }
+   </style>
+      </head>
+<body>
+<div><label id="myprofile" style="margin-top: 3%; margin-left: 7%; opacity: 0.6;">DASHBOARD</label></div>
+<div id="firstbox" class="shadow p-3 mb-5 rounded">
+    
+    
+  <div class="row">
+    <h3 id="adname">Shajeer vu</h3>
+    <h4 style="color: white;">python</h4>
+    <h5 style="font-weight: 400">
+    <span style="color: #12c598">Joining date</span><span class="date"> &nbsp&nbsp jan. 10, 2022</h5></span>   
+    <h5 style="font-weight: 400">
+    <span style="color: #12c598">employee id</span><span class="date"> &nbsp&nbsp JB 007</h5></span>   
+ 
+  </div>
+</div>
+
+    <div class="row">
+        <div class="col-lg-6 grid-margin stretch-card">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Pie chart</h4>
+              <canvas id="pieChart" style="height:250px"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Bar chart</h4>
+                <canvas id="barChart" style="height:230px"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+                <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="{% static 'assets/vendors/js/vendor.bundle.base.js' %}"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="{% static 'assets/vendors/chart.js/Chart.min.js' %}"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="{% static 'assets/js/off-canvas.js' %}"></script>
+    <script src="{% static 'assets/js/hoverable-collapse.js' %}"></script>
+    <script src="{% static 'assets/js/misc.js' %}"></script>
+    <script src="{% static 'assets/js/settings.js' %}"></script>
+    <script src="{% static 'assets/js/todolist.js' %}"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="{% static 'assets/js/chart.js' %}"></script>
+</body>
+
+
+{% endblock %}
