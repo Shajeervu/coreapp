@@ -1,13 +1,43 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 {%extends 'index.html'%}
-{% load static %}
+{%load static%}
+{%block content%}
+<div class="row pt-5" style="background-color: black;">
+    <div class=" ml-5 text-light" style="font-size: 20px;font-weight: 600;margin-left:60px; opacity: 0.6;">Reported issues</div></div>
+    <br>
 
 
-{% block content %}
-<style>
-</style>
+  
+    <div class="row mt-3">
+     
+      <!-- <div class="col-md-2"></div> -->
+      <div class="col-md-12">
+        <a href="/issues/" style="text-decoration: none;">
 
-<body>
-    <h1>hii</h1>
+      <div id="" class="container shadow   " style="border-radius:20px;margin-left: 20px;background-color: #191c24; ">
+     <div class="row p-3">
+     <div class="col-md-2" >
+        <img src="{% static 'img/y.png'%}" width="20" height="25" ></div>
+     
+        <div class="col-md-3 " style="opacity: 0.8;color: rgb(255, 251, 251);font-size: 17px;font-weight: 400;"><h5>reported issue</h5></div>
+          <div class="col-md-3 " style="opacity: 0.8;color: rgb(255, 251, 251);font-size: 17px;font-weight: 400;"><h5>shajeer vu</h5></div>
+          
+          <div class="col-md-2 " style="opacity: 0.8;color: rgb(255, 251, 251);font-size: 17px;font-weight: 400;"><h5>python</h5></div>
+          <div class="col-md-2 " style="opacity: 0.8;color: #58B7AA;font-size: 17px;font-weight: 400;"><h5> dec 2,2022</h5></div>
+        </div>
+      </div>
+        </a>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+        </a>
+      
+  
+  </main>
+
 </body>
-
-{% endblock content %}
+</html>
+{%endblock%}

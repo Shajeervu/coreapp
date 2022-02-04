@@ -23,5 +23,7 @@ urlpatterns = [
     path('dashboard/', views.dashboard),
     path('Reportedissues/', views.Reportedissues),
     path('reportissue/', views.reportissue),
-     path('reportedissue/', views.reportedissue),
+    path('reportedissue/', views.reportedissue),
+    path('TLsuccess/', views.TLsuccess),
+    path('issues/', views.issues),
 ]

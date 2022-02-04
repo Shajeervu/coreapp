@@ -12,3 +12,7 @@ def reportissue(request):
     return render(request,'reportissue.html')
 def reportedissue(request):
     return render(request,'reportedissue.html')
+def TLsuccess(request):
+    return render(request,'TLsuccess.html')
+def issues(request):
+    return render(request,'issues.html')
