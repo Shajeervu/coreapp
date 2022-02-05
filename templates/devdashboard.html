@@ -2,63 +2,60 @@
 {%load static%}
 {%block content%}
 
-
-<div class="main-panel" style="background-color:black;">
-    <div class="row">
-        <div class=" ml-5 " style="font-size: 20px;font-weight: 600;margin-left:40px;opacity: 0.9;color: #FFFFFF;">DASHBOARD</div></div>
-        <div class="container-fluid">
+    <div class="row mt-3">
+        <div class="" style="font-size: 20px;font-weight: 600;color:6C729;color:#6C7293;">DASHBOARD</div></div>
+        <div class="">
         <div class="row mt-5 " style="background-color: #191c24;">
              <div class="col-md-6">
-                    <h3 class="adname pt-4" style="margin-left:30px;color: #6c7293;">Shajeervu</h3>
-                    <h4 style="font-weight: 400;margin-left:30px;color: #6c7293;">python</h4>
-                    <h5 style="font-weight: 400;margin-left:30px;color: #6c7293;">
-                    <span style="color: #58B7AA">Joining date</span>&nbsp10 jan 2021</h5>
-                    <h5 style="font-weight: 400;margin-left:30px;color: #6c7293;">
-                      <span style="color: #58B7AA">employee id</span>&nbsp10 JB007</h5>
+                    <h3 class="adname pt-4" style="margin-left:30px;color:#6C7293;">Shajeer</h3>
+                    <h4 style="font-weight: 400;margin-left:30px;color:#6C7293;">python</h4>
+                    <h5 style="font-weight: 400;margin-left:30px;color:#6C7293;">
+                    <span style="color: #58B7AA">Joining date</span>&nbsp;10 jan 2021</h5>
+                    <h5 style="font-weight: 400;margin-left:30px;color:#6C7293;">
+                        <span style="color: #58B7AA">Employee id</span>&nbsp;JB 007</h5>
                 </div>
                 <div class="col-md-3"></div>
                 <div class="col-md-3">
                    <div style="margin-left: 30px;"><img src="{% static '/assets/images/faces/face5.jpg' %}" class="p-3 rounded-circle justify-content-end ml-5" width="150" height="150" id=""></div> </div>
-                </div></div>
-                <div class="content-wrapper">
-                  <div class="page-header">
-                      <h3  class=" ml-5 " style="font-size: 20px;font-weight: 600;margin-left:40px;opacity: 0.9;color: #FFFFFF;"> CHART </h3>
-                      
-                  </div>
-                  <div class="row">
-                  <div class="col-lg-6 grid-margin stretch-card">
-                      <div class="card">
-                      <div class="card-body">
-                          <h4 class="card-title"style ="color: #6c7293;">Bar chart</h4>
-                          <canvas id="barChart" style="height:230px"></canvas>
-                      </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-6 grid-margin stretch-card">
-                      <div class="card">
-                      <div class="card-body">
-                          <h4 class="card-title"style="color: #6c7293;">Pie chart</h4>
-                          <canvas id="pieChart" style="height:250px"></canvas>
-                      </div>
-                      </div>
-                  </div>
-                  </div>
-              </div>
-              
-              <!--End Chart Html-->
+                </div>
+    
       
-              
-              <!-- main-panel ends -->
+      <div class="row mt-5">
+        <div class="col-lg-6 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title" style="color:#6C7293;">Pie chart</h4>
+                <canvas id="pieChart" style="height:200px"></canvas>
               </div>
-              
-              
-              
-              
-              
-              
-              <!-- container-scroller -->
-              <!-- plugins:js -->
-              
-              
-              
-              {%endblock%}
+            </div>
+          </div>
+        <div class="col-lg-6 grid-margin stretch-card">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title" style="color:#6C7293;">Bar chart</h4>
+              <canvas id="barChart" style="height:200px"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="../../assets/vendors/chart.js/Chart.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="../../assets/js/off-canvas.js"></script>
+    <script src="../../assets/js/hoverable-collapse.js"></script>
+    <script src="../../assets/js/misc.js"></script>
+    <script src="../../assets/js/settings.js"></script>
+    <script src="../../assets/js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="../../assets/js/chart.js"></script>
+    <!-- End custom js for this page -->
+{% endblock %}
