@@ -1,4 +1,4 @@
-{%extends 'index.html'%}
+{%extends 'devindex.html'%}
 {% load static %}
 
 {% block content %}
@@ -41,7 +41,15 @@
             <div class="card-body">
               <h4 class="card-title"style="color: #6c7293;">Describe your issue</h4>
               <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
-              <a href="/TLsuccess/"><button type="submit" class="btn btn-primary ">Submit</button></a>
+              <a href="/app/devsuccess"><div class="row">
+                <div class="col-sm-5"></div>
+                <div class="col-sm-7" class="pull-right" >
+                    <button type="submit" onclick="redirect()" class="btn btn-outline-success btn-icon-text" >
+                    <i class="mdi mdi-file-check btn-icon-prepend"></i>
+                    Submit
+                    </button>
+                </div>
+            </div></a>
             </div>
           </div>
     </div>
