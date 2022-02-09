@@ -18,3 +18,7 @@ def devissues(request):
     return render(request,'devissues.html')
 def devsample(request):
     return render(request,'devsample.html')
+def manager_index(request):
+    return render(request,'manager_index.html')
+def manager_projects(request):
+    return render(request,'manager_projects.html')
