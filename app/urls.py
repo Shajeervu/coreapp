@@ -10,7 +10,7 @@ urlpatterns = [
     re_path(r'^devreportedissue$', views.devreportedissue, name='devreportedissue'),
     re_path(r'^devsuccess$', views.devsuccess, name='devsuccess'),
     re_path(r'^devissues$', views.devissues, name='devissues'),
-     re_path(r'^manager_index', views.manager_index, name='manager_index'),
-      re_path(r'^manager_projects', views.manager_projects, name='manager_projects'),
+    re_path(r'^manager_index', views.manager_index, name='manager_index'),
+    re_path(r'^manager_projects', views.manager_projects, name='manager_projects'),
     
 ]
